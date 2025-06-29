@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.prose {
+  color: rgb(55 65 81);
+  max-width: none;
+}
+
+.prose h1 {
+  color: rgb(17 24 39);
+  font-weight: 800;
+}
+
+.prose h2 {
+  color: rgb(17 24 39);
+  font-weight: 700;
+}
+
+.prose h3 {
+  color: rgb(17 24 39);
+  font-weight: 600;
+}
+
+.prose strong {
+  color: rgb(17 24 39);
+  font-weight: 600;
+}
+
+.prose ul {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+}
+
+.prose li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
