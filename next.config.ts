@@ -1,7 +1,12 @@
 import createMDX from '@next/mdx'
+import { NextConfig } from 'next'
+import { version as VERSION } from './package.json'
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
+  env: {
+    VERSION
+  },
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   eslint: {
     ignoreDuringBuilds: true,
@@ -12,6 +17,18 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  rewrites: async () => ({
+    afterFiles: [
+      {
+        source: '/humans.txt',
+        destination: '/api/humans',
+      },
+      {
+        source: '/.well-known/humans.txt',
+        destination: '/api/humans',
+      },
+    ],
+  }),
 }
 
 const withMDX = createMDX({

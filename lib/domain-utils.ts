@@ -2,7 +2,9 @@ import { promises as fs } from "fs"
 import path from "path"
 
 export interface DomainData {
+  locale: string
   title: string
+  description: string
   price: string
   currency: string
   contact: string
@@ -17,6 +19,8 @@ function markdownToHtml(markdown: string): string {
       .replace(/^### (.*$)/gim, '<h3 class="text-xl font-bold mb-4 mt-8">$1</h3>')
       .replace(/^## (.*$)/gim, '<h2 class="text-2xl font-bold mb-6 mt-10">$1</h2>')
       .replace(/^# (.*$)/gim, '<h1 class="text-3xl font-bold mb-8 mt-12">$1</h1>')
+      // Links - must come before bold/italic to avoid conflicts
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-blue-600 hover:text-blue-800 underline">$1</a>')
       // Bold and italic
       .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold">$1</strong>')
       .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>')
@@ -62,7 +66,9 @@ export async function getDomainData(domain: string): Promise<DomainData> {
     })
 
     return {
+      locale: frontmatterData.locale || "en",
       title: frontmatterData.title || domain,
+      description: frontmatterData.description || "",
       price: frontmatterData.price || "10,000",
       currency: frontmatterData.currency || "USD",
       contact: frontmatterData.contact || "hello@example.com",
