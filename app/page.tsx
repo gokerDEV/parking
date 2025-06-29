@@ -20,6 +20,7 @@ export default async function HomePage() {
       </LocaleProvider>
     )
   } catch (error) {
+    console.error(error)
     const domainData = await getDomainData("kirkpinar.org")
     const allDomains = await getAllDomains()
 
@@ -58,6 +59,7 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     }
   } catch (error) {
+    console.error(error)
     return {
       title: `${domain} - Premium Domain for Sale`,
       description: `${domain} is available for purchase. Contact us for more information.`,

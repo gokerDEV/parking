@@ -57,11 +57,13 @@ export async function getDomainData(domain: string): Promise<DomainData> {
     const content = match[2]
 
     // Parse frontmatter
-    const frontmatterData: any = {}
+    const frontmatterData: Record<string, string> = {}
     frontmatter.split("\n").forEach((line) => {
       const [key, ...valueParts] = line.split(":")
       if (key && valueParts.length > 0) {
-        frontmatterData[key.trim()] = valueParts.join(":").trim().replace(/['"]/g, "")
+        const trimmedKey = key.trim()
+        const trimmedValue = valueParts.join(":").trim().replace(/['"]/g, "")
+        frontmatterData[trimmedKey] = trimmedValue
       }
     })
 
