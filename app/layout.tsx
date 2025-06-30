@@ -1,4 +1,6 @@
 import Version from "@/components/common/version"
+import { CookieWidget } from '@/components/features/cookie-widget.component'
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import type React from "react"
@@ -21,6 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>{children}
         <Version />
+        <CookieWidget />
+        <Analytics />
       </body>
     </html>
   )
