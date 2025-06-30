@@ -1,0 +1,45 @@
+{
+    "common": {
+        "forSale": "FOR SALE",
+        "contact": "Contact",
+        "about": "About",
+        "loading": "Loading...",
+        "error": "Error",
+        "notFound": "Not Found"
+    },
+    "domain": {
+        "premiumDomain": "Premium Domain",
+        "premiumDomainDesc": "Short, memorable, and brandable domain name",
+        "instantTransfer": "Instant Transfer",
+        "instantTransferDesc": "Quick and secure domain transfer process on name.com",
+        "seoReady": "SEO Ready",
+        "seoReadyDesc": "Perfect for building your brand online",
+        "otherDomainsTitle": "Other Premium Domains Available",
+        "domainSpecs": "Domain Specifications",
+        "registrationDate": "Registration Date",
+        "extension": "Extension",
+        "length": "Length",
+        "brandability": "Brandability",
+        "marketPosition": "Market Position"
+    },
+    "metadata": {
+        "defaultTitle": "Premium Domain for Sale",
+        "defaultDescription": "This premium domain is available for purchase. Contact us for more information.",
+        "ogType": "website",
+        "twitterCard": "summary_large_image"
+    },
+    "cookieBanner": {
+        "title": "Cookies and use of our website",
+        "description": "Our site uses cookies and similar technologies from us and third parties (like Google Analytics, Hotjar) to analyze traffic and understand how you use our site, helping us improve your experience. See our",
+        "cookiePolicy": "Cookie policy",
+        "cookiePolicyAria": "More information about our cookie policy",
+        "forDetails": "for details. Your information is handled according to our",
+        "privacyPolicy": "Privacy Policy",
+        "privacyPolicyAria": "More information about your privacy",
+        "question": "Do you accept these analytics technologies?",
+        "reject": "Reject",
+        "accept": "Accept",
+        "cookieBannerAria": "Cookie banner",
+        "cookiesUseAria": "Cookies and use of our website"
+    }
+}

@@ -1,6 +1,6 @@
 import DomainParking from "@/components/domain-parking"
-import LocaleProvider from "@/components/locale-provider"
-import { getAllDomains, getDomainData } from "@/lib/domain-utils"
+import { getDictionary } from "@/lib/dictionaries"
+import { getDomainData } from "@/lib/domain-utils"
 import { Metadata } from "next"
 import { headers } from "next/headers"
 
@@ -12,22 +12,26 @@ export default async function HomePage() {
 
   try {
     const domainData = await getDomainData(domain)
-    const allDomains = await getAllDomains()
+    const dict = await getDictionary(domainData.locale as 'en' | 'tr')
 
     return (
-      <LocaleProvider locale={domainData.locale}>
-        <DomainParking domain={domain} domainData={domainData} allDomains={allDomains} />
-      </LocaleProvider>
+      <DomainParking
+        domain={domain}
+        domainData={domainData}
+        dict={dict}
+      />
     )
   } catch (error) {
     console.error(error)
     const domainData = await getDomainData("kirkpinar.org")
-    const allDomains = await getAllDomains()
+    const dict = await getDictionary(domainData.locale as 'en' | 'tr')
 
     return (
-      <LocaleProvider locale={domainData.locale}>
-        <DomainParking domain={domain} domainData={domainData} allDomains={allDomains} />
-      </LocaleProvider>
+      <DomainParking
+        domain={domain}
+        domainData={domainData}
+        dict={dict}
+      />
     )
   }
 }

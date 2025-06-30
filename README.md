@@ -20,8 +20,8 @@ It renders a fully customizable landing page per domain using frontmatter metada
 
 ## 💡 Why This Exists
 
-> "I’ve registered domains over the years for meaningful or experimental ideas.  
-> Instead of letting them expire silently, I’m listing them openly with context, purpose, and story."
+> "I've registered domains over the years for meaningful or experimental ideas.  
+> Instead of letting them expire silently, I'm listing them openly with context, purpose, and story."
 
 This system:
 - Makes each domain independently discoverable

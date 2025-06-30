@@ -1,5 +1,6 @@
 'use client'
 
+import type { Dictionary } from '@/lib/dictionary-types'
 import dynamic from 'next/dynamic'
 
 const CookieBanner = dynamic(() => import('./cookie-banner.component'), {
@@ -7,6 +8,11 @@ const CookieBanner = dynamic(() => import('./cookie-banner.component'), {
   ssr: false,
 })
 
-export const CookieWidget = () => {
-  return <CookieBanner />
+interface CookieWidgetProps {
+  dict: Dictionary
+  locale: string
+}
+
+export const CookieWidget = ({ dict, locale }: CookieWidgetProps) => {
+  return <CookieBanner locale={locale} dict={dict} />
 }

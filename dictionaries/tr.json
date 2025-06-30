@@ -1,0 +1,45 @@
+{
+    "common": {
+        "forSale": "SATILIK",
+        "contact": "İletişim",
+        "about": "Hakkında",
+        "loading": "Yükleniyor...",
+        "error": "Hata",
+        "notFound": "Bulunamadı"
+    },
+    "domain": {
+        "premiumDomain": "Premium Alan Adı",
+        "premiumDomainDesc": "Kısa, akılda kalıcı ve markalanabilir alan adı",
+        "instantTransfer": "Anında Transfer",
+        "instantTransferDesc": "name.com üzerinden hızlı ve güvenli alan adı transfer süreci",
+        "seoReady": "SEO Hazır",
+        "seoReadyDesc": "Markanızı çevrimiçi oluşturmak için mükemmel",
+        "otherDomainsTitle": "Diğer Premium Alan Adları Mevcut",
+        "domainSpecs": "Alan Adı Özellikleri",
+        "registrationDate": "Tescil Tarihi",
+        "extension": "Uzantı",
+        "length": "Uzunluk",
+        "brandability": "Markalanabilirlik",
+        "marketPosition": "Pazar Konumu"
+    },
+    "metadata": {
+        "defaultTitle": "Premium Alan Adı Satılık",
+        "defaultDescription": "Bu premium alan adı satılıktır. Daha fazla bilgi için bizimle iletişime geçin.",
+        "ogType": "website",
+        "twitterCard": "summary_large_image"
+    },
+    "cookieBanner": {
+        "title": "Çerezler ve web sitemizin kullanımı",
+        "description": "Sitemiz, trafiği analiz etmek ve sitemizi nasıl kullandığınızı anlamak için bizden ve üçüncü taraflardan (Google Analytics, Hotjar gibi) çerezler ve benzer teknolojiler kullanır, bu da deneyiminizi iyileştirmemize yardımcı olur. Detaylar için",
+        "cookiePolicy": "Çerez politikamızı",
+        "cookiePolicyAria": "Çerez politikamız hakkında daha fazla bilgi",
+        "forDetails": "inceleyin. Bilgileriniz",
+        "privacyPolicy": "Gizlilik Politikamıza",
+        "privacyPolicyAria": "Gizliliğiniz hakkında daha fazla bilgi",
+        "question": "göre işlenir. Bu analitik teknolojileri kabul ediyor musunuz?",
+        "reject": "Reddet",
+        "accept": "Kabul Et",
+        "cookieBannerAria": "Çerez banner'ı",
+        "cookiesUseAria": "Çerezler ve web sitemizin kullanımı"
+    }
+}

@@ -1,6 +1,6 @@
+import { getConstants } from '@/app/layout'
 import { Container } from '@/components/common/container.component'
 import { Divider } from '@/components/common/divider.component'
-import { CONTACT_EMAIL, DOMAIN, SITE_NAME } from '@/config/constants'
 
 export async function generateMetadata() {
   return {
@@ -15,6 +15,8 @@ export async function generateMetadata() {
 }
 
 const Page = async () => {
+  const { CONTACT_EMAIL, DOMAIN, SITE_NAME } = await getConstants()
+
   return (
     <Container>
       <div className="mx-auto w-full px-4 py-8 pb-[200px] xl:container xl:px-0">
