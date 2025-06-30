@@ -57,8 +57,13 @@ export default async function RootLayout({
   const allDomains = await getAllDomains()
   const otherDomains = allDomains.filter((d) => d !== domain)
 
+
+
   return (
     <html lang={locale}>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6920776915496505" crossOrigin="anonymous"></script>
+      </head>
       <body className={inter.className}>
         <div className="min-h-screen bg-white">
           {/* Header */}
